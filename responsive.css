@@ -1,0 +1,69 @@
+
+
+.player{
+    max-width: 1000px;
+}
+
+.player .dashboard{
+    max-width: 1000px;
+}
+header{
+    margin-bottom: 40px;
+}
+
+header h4{
+    font-size: 44px;
+}
+
+header h2{
+    font-size: 70px;
+}
+
+.cd{
+    width: 500px;
+}
+
+.control .btn{
+    font-size: 56px;
+    padding: 40px;
+}
+
+.player.playing .icon-play{
+    margin-left: 10px;
+    font-size: 48px;
+}
+
+.progress{
+    height: 20px;
+    border-radius: 10px;
+}
+
+.progress::-webkit-slider-thumb{
+	-webkit-appearance: none ;
+	appearance: none;
+	width: 36px;
+	height: 20px;
+	background-color: var(--primary-color);
+	cursor: pointer;
+    border-radius: 10px;
+}
+
+.playlist{
+    margin-top: 940px;
+}
+.song .thumb{
+    width: 150px;
+    height: 150px;
+    margin: 0 32px;
+}
+
+.song .title{
+    font-size: 38px;
+}
+.song .author{
+    font-size: 32px;
+}
+
+.song .option{
+    font-size: 50px;
+}

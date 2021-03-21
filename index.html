@@ -1,46 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hoc JS</title>
+    <!-- Awesome ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>S2 Music - Âm Nhạc Trong Tim </title>
     <link rel="stylesheet" href="./maincss.css">
+    <link rel="stylesheet" href="./responsive.css">
 </head>
-<body>
+<body>  
+    <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <!-- Header -->
+            <header>
+                <h4>Now playing:</h4>
+                <h2>String 21th</h2>
+            </header>
 
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb" style="background-image:url('./assets/img/conuongxinhdep.jpg');"> 
+                </div>
+            </div>
+            <!-- Control -->
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fas fa-redo"></i>
+                </div>
 
+                <div class="btn btn-prev">
+                    <i class="fas fa-step-backward"></i>
+                </div>
 
-<div class="container">
-<div class="main">
+                <div class="btn btn-toggle-play">
+                    <i class="fas fa-pause icon-pause"></i>
+                    <i class="fas fa-play icon-play"></i>
+                </div>
 
-    <p>Cường hóa vũ khí. Số lần cường hóa khi đạt +12 càng ít thì bạn sẽ <span>Chiến Thắng</span></p>
+                <div class="btn btn-next">
+                    <i class="fas fa-step-forward"></i>
+                </div>
 
-    <button id="box">Cường hóa</button>
-</div>
+                <div class="btn btn-random">
+                    <i class="fas fa-random"></i>
+                </div>
+            </div>
 
-<div class="info">
-    <div class="item">
-        <div class="item__inner">
-            <h1 class="title">Số lần thử</h1>
-            <p class="description"></p>
+            <input type="range" id="progress" class="progress" 
+            value="0" step="1" min="0" max="100">
+
+            <audio src="" id="audio"></audio>
         </div>
     </div>
-    <div class="item">
-        <h1 class="title">Level</h1>
-        <p class="description">0</p>
+
+    <!-- Playlist -->
+    <div class="playlist">
+        <div class="song">
+            <div class="thumb" style="background-image:
+            url('./assets/img/conuongxinhdep.jpg')
+            ;">
+            </div>
+
+            <div class="body">
+                <h3 class="title">Music name</h3>
+                <p class="author">Singer</p>
+            </div>
+    
+            <div class="option">
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+        </div>
     </div>
-    <div class="item">
-        <h1 class="title">Tỉ lệ</h1>
-        <p class="description">100%</p>
-    </div>
-</div>
-</div>
-
-
-
-
-
-
 
 
     <script type="text/javascript" src="./mainjs.js"></script>
+    <script type="text/javascript" src="./music.js"></script>
 </body>
 </html>
