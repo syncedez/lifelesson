@@ -3,6 +3,9 @@
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 
+const playList = $(".playlist")
+
+
 const app = {
     songs: [
         {
@@ -28,9 +31,25 @@ const app = {
     render: function(){
         const htmls = this.songs.map(song => {
             return `
-                
+            <div class="song">
+                <div class="thumb" style="background-image:
+                    url('./assets/img/conuongxinhdep.jpg')
+                    ;">
+                </div>
+
+                <div class="body">
+                    <h3 class="title">Music name</h3>
+                    <p class="author">Singer</p>
+                </div>
+    
+                <div class="option">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
             `
         })
+
+        playList.innerHTML = htmls.join('')
     },
 
     start: function(){
